@@ -114,6 +114,15 @@ li {
 
 li img {
   margin-left: auto;
+  cursor: "pointer";
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+li img:hover {
+  margin-left: auto;
+  border: 1px solid #6b6671;
 }
 
 li::before {
@@ -133,6 +142,7 @@ li::before {
   display: flex;
   align-items: center;
   gap: 8px;
+  visibility: hidden;
 }
 
 #alert-message span {

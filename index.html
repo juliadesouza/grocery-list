@@ -13,10 +13,17 @@
     />
   </head>
   <body>
-    <div><img src="assets/back.png" alt="" /><span>Voltar</span></div>
+    <div id="back-button">
+      <img src="assets/back.png" alt="" /><span>Voltar</span>
+    </div>
     <h1>Compras da semana</h1>
     <form>
-      <input type="text" />
+      <input
+        type="text"
+        id="new-item"
+        name="new-item"
+        placeholder="Adicione um novo item"
+      />
       <button type="submit">Adicionar item</button>
     </form>
     <ul id="grocery-list">
@@ -25,6 +32,10 @@
       <li>Suco de laranja <img src="assets/delete.svg" alt="" /></li>
       <li>Bolacha <img src="assets/delete.svg" alt="" /></li>
     </ul>
-    <div id="alert-message"></div>
+    <div id="alert-message">
+      <img src="assets/alert.svg" alt="" />
+      <span>O item foi removido da lista</span>
+      <img src="assets/close.svg" alt="" />
+    </div>
   </body>
 </html>
